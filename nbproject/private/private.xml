@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/Jeferson/Documents/NetBeansProjects/6pSistemas/PadroesDeProjetos/src/padroesprojetos/strategy/Human.java</file>
+            <file>file:/C:/Users/Jeferson/Documents/NetBeansProjects/6pSistemas/PadroesDeProjetos/src/padroesprojetos/bridge/BRelatorio.java</file>
+            <file>file:/C:/Users/Jeferson/Documents/NetBeansProjects/6pSistemas/PadroesDeProjetos/src/padroesprojetos/state/Terra.java</file>
+            <file>file:/C:/Users/Jeferson/Documents/NetBeansProjects/6pSistemas/PadroesDeProjetos/src/padroesprojetos/state/Personagem.java</file>
+            <file>file:/C:/Users/Jeferson/Documents/NetBeansProjects/6pSistemas/PadroesDeProjetos/src/padroesprojetos/state/Agua.java</file>
+            <file>file:/C:/Users/Jeferson/Documents/NetBeansProjects/6pSistemas/PadroesDeProjetos/src/padroesprojetos/state/EstadoPersonagem.java</file>
+            <file>file:/C:/Users/Jeferson/Documents/NetBeansProjects/6pSistemas/PadroesDeProjetos/src/padroesprojetos/PadroesProjetos.java</file>
+            <file>file:/C:/Users/Jeferson/Documents/NetBeansProjects/6pSistemas/PadroesDeProjetos/src/padroesprojetos/factory/TradutorFactory.java</file>
+            <file>file:/C:/Users/Jeferson/Documents/NetBeansProjects/6pSistemas/PadroesDeProjetos/src/padroesprojetos/template/Relatorio.java</file>
+            <file>file:/C:/Users/Jeferson/Documents/NetBeansProjects/6pSistemas/PadroesDeProjetos/src/padroesprojetos/factory/Tradutor.java</file>
+        </group>
+    </open-files>
+</project-private>

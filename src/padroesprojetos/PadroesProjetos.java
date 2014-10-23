@@ -1,8 +1,13 @@
 package padroesprojetos;
 
+import java.util.ArrayList;
+import java.util.List;
 import padroesprojetos.bridge.BRelatorio;
 import padroesprojetos.bridge.BRelatorioPDF;
 import padroesprojetos.bridge.ProcessadorCriptografado;
+import padroesprojetos.composite.Produto;
+import padroesprojetos.composite.ProdutoComposto;
+import padroesprojetos.composite.ProdutoUnico;
 import padroesprojetos.factory.Tradutor;
 import padroesprojetos.factory.TradutorFactory;
 import padroesprojetos.observer.Termometro;
@@ -66,12 +71,28 @@ public class PadroesProjetos {
 //        relatorio.setProcessador(new ProcessadorCriptografado());
 //        relatorio.gerarRelatorio();
         
-        Personagem personagem = new Personagem();
-        personagem.pressionouA();
-        personagem.pressionouB();
-        personagem.setEstadoPersonagem(new Agua());
-        personagem.pressionouA();
-        personagem.pressionouB();
+//        Personagem personagem = new Personagem();
+//        personagem.pressionouA();
+//        personagem.pressionouB();
+//        personagem.setEstadoPersonagem(new Agua());
+//        personagem.pressionouA();
+//        personagem.pressionouB();
+        
+        Produto xebeck = new ProdutoUnico(2.5);
+        Produto danoninho = new ProdutoUnico(2.5);
+        Produto refrigerante = new ProdutoUnico(5.0);
+        Produto carne = new ProdutoUnico(10.0);
+        
+        List<Produto> produtos = new ArrayList<>();
+        produtos.add(xebeck);
+        produtos.add(danoninho);
+        produtos.add(refrigerante);
+        produtos.add(carne);
+        
+        Produto cesta = new ProdutoComposto(produtos);
+        System.out.println(cesta.getPreco());
+        
+        
          
          
         
