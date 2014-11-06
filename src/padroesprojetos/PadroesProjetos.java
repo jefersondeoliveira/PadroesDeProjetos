@@ -5,6 +5,10 @@ import java.util.List;
 import padroesprojetos.bridge.BRelatorio;
 import padroesprojetos.bridge.BRelatorioPDF;
 import padroesprojetos.bridge.ProcessadorCriptografado;
+import padroesprojetos.chain.BuscaNaMemoria;
+import padroesprojetos.chain.BuscaNoBD;
+import padroesprojetos.chain.BuscaRemoto;
+import padroesprojetos.chain.BuscadorDeDados;
 import padroesprojetos.composite.Produto;
 import padroesprojetos.composite.ProdutoComposto;
 import padroesprojetos.composite.ProdutoUnico;
@@ -78,19 +82,25 @@ public class PadroesProjetos {
 //        personagem.pressionouA();
 //        personagem.pressionouB();
         
-        Produto xebeck = new ProdutoUnico(2.5);
-        Produto danoninho = new ProdutoUnico(2.5);
-        Produto refrigerante = new ProdutoUnico(5.0);
-        Produto carne = new ProdutoUnico(10.0);
+//        Produto xebeck = new ProdutoUnico(2.5);
+//        Produto danoninho = new ProdutoUnico(2.5);
+//        Produto refrigerante = new ProdutoUnico(5.0);
+//        Produto carne = new ProdutoUnico(10.0);
+//        
+//        List<Produto> produtos = new ArrayList<>();
+//        produtos.add(xebeck);
+//        produtos.add(danoninho);
+//        produtos.add(refrigerante);
+//        produtos.add(carne);
+//        
+//        Produto cesta = new ProdutoComposto(produtos);
+//        System.out.println(cesta.getPreco());
         
-        List<Produto> produtos = new ArrayList<>();
-        produtos.add(xebeck);
-        produtos.add(danoninho);
-        produtos.add(refrigerante);
-        produtos.add(carne);
+        BuscadorDeDados remoto  = new BuscaRemoto(null);
+        BuscadorDeDados banco   = new BuscaNoBD(remoto);
+        BuscadorDeDados memoria = new BuscaNaMemoria(banco);
         
-        Produto cesta = new ProdutoComposto(produtos);
-        System.out.println(cesta.getPreco());
+        System.out.println(memoria.localizarDadosAquiOuNoProximo());
         
         
          
